@@ -1,0 +1,22 @@
+public class HelloWorld {
+    public static void main(String[] args) {
+        String str1 = "123";
+        String str2 = "5642";
+        int sum1 = 0;
+        int sum2 = 0;
+        
+        for (int i = 0; i < str1.length(); i++) {
+            int num1 = str1.charAt(i)-48; //Convert char to int using 48
+            sum1 += num1;
+        } 
+        System.out.println(sum1);
+        for (int i = 0; i < str2.length(); i++) {    
+            int num2 = str2.charAt(i)-48;  //Convert char to int using 48
+            sum2 += num2;
+        }
+        System.out.println(sum2);
+
+        int totalSum = sum1 + sum2;
+        System.out.println("Total Sum: " + totalSum);
+    }
+}
